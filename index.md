@@ -1,7 +1,5 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 permalink: /
 ---
-Hello this is a test
+Welcome to my very simple page about me!
+I'll never be sure what it will end up becoming, but I guess that's part of the point: A continuous stream of thought and work.
