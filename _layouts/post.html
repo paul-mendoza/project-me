@@ -1,6 +1,14 @@
----
-layout: default
----
-<p>{{ page.date }} - Written by {{ page.author }}</p>
-
-{{ content }}
+<div class="post">
+    <p class="post__head">
+        <span class="post__head__title">{{ page.title | upcase }}</span> - <span class="post__head__date">{{ page.date | date_to_string: "ordinal", "US"  }}</span>
+    </p>
+    <div class="post__body">
+        {{ content }}
+    </div>
+</div>
+<style>
+    .post {width: 1200px;}
+    .post__head__date {font-style: italic;}
+    .post__head__title {font-style: bold;}
+    .post__body {width: 66%}
+</style>
