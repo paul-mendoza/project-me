@@ -1,4 +1,5 @@
 ---
+title: home
 permalink: /
 ---
 Welcome to my very simple page about me!
