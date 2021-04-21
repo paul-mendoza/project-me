@@ -1,0 +1,22 @@
+---
+title: recipes
+permalink: recipes
+layout: default
+---
+<ul>
+{% for recipe in site.recipes %}
+  <li>
+  	<h3>{{ recipe.title }}</h3>
+	<ul>
+		{% for ingredient in recipe.ingredients %}
+		<li>{{ ingredient.amount }} {{ ingredient.unit }} {{ ingredient.name }}</li>
+		{% endfor %}
+	</ul>
+	<ol>
+		{% for step in recipe.method %}
+		<li><p>{{ step }}</p></li>
+		{% endfor %}
+	</ol>
+  </li>
+{% endfor %}
+</ul>
